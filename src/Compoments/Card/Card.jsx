@@ -2,6 +2,7 @@ import './Card.css';
 import Imgcard from '../Imgcard/Imgcard';
 import Imgethereum from './../../img/icon-ethereum.svg'
 import sarace from './../../img/image-avatar.png'
+import clock from './../../img/icon-clock.svg'
 
 export default function Card(
 ) {
@@ -12,12 +13,15 @@ export default function Card(
             <p className='text-[#879DBE] w-[300px] text-lg pt-5 text-start'>Our Equilibrium collection promotes <br />
             balance and calm.</p>
             <div className='w-[340px] h-[130px] '>
-                <div className="h-1/2 w-full ">
+                <div className="h-1/2 w-full flex">
                     <div className='w-[50%] h-full  flex items-center justify-center'>
                         <img className='h-[35%]' src={Imgethereum} alt="" />
                         <p className='ps-2 pe-10 text-[#1BD7E1] font-bold'>0.041 ETH</p>
                     </div>
-                    <div className='w-[50%] h-full'></div>
+                    <div className='w-[50%] h-full flex justify-end items-center'>
+                        <img className='h-[30%] pe-1' src={clock} alt="" />
+                        <p className='text-[#879DBE] me-6'>3 days left</p>
+                    </div>
                 </div>
                 <div className='h-[1px] w-[300px] bg-[#879DBE] ms-[18px]'></div>
                 <div className="h-1/2 w-full flex items-center justify-center ">
